@@ -1,0 +1,42 @@
+@use 'variables' as *;
+.header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: $color-dark;
+  padding: 16px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $color-primary;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 24px;
+    a { color: $color-white; font-size: 0.95rem; transition: color 0.2s;
+      &:hover { color: $color-primary; }
+    }
+  }
+
+  &__phone {
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  @media (max-width: $bp-md) {
+    &__nav { display: none; }
+  }
+}
+
+body { padding-top: 70px; }

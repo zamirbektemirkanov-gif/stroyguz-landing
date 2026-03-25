@@ -1,0 +1,55 @@
+@use 'variables' as *;
+@use 'reset';
+@use 'header';
+@use 'hero';
+@use 'advantages';
+@use 'services';
+@use 'calculator';
+@use 'steps';
+@use 'reviews';
+@use 'form';
+@use 'footer';
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: $container-padding;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: $color-dark;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s;
+
+  &:hover { opacity: 0.88; }
+
+  &--primary {
+    background: $color-primary;
+    color: $color-white;
+  }
+}
+
+section {
+  padding: 80px 0;
+  &:nth-child(even) { background: $color-light; }
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  &.visible { opacity: 1; transform: translateY(0); }
+}

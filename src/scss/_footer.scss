@@ -1,0 +1,39 @@
+@use 'variables' as *;
+.footer {
+  background: $color-dark;
+  color: rgba(255,255,255,0.65);
+  padding: 32px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @media (max-width: $bp-sm) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    a {
+      color: $color-primary;
+      font-weight: 700;
+      font-size: 1rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    span {
+      font-size: 0.9rem;
+    }
+  }
+}
