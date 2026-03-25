@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СтройГруз — Грузоперевозки по городу и области</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">🚛 СтройГруз</a>
+      <nav class="header__nav">
+        <a href="#services">Услуги</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a href="tel:+79001234567" class="header__phone">+7 (900) 123-45-67</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">Перевезём любой груз по городу и области</h1>
+        <p class="hero__subtitle">Работаем 24/7 · Страхование груза · Любой тоннаж</p>
+        <a href="#contact" class="btn btn--primary">Оставить заявку</a>
+      </div>
+      <div class="hero__image">
+  <img src="img/truck.png" alt="Грузовик СтройГруз">
+</div>
+    </div>
+  </section>
+
+  <!-- ПРЕИМУЩЕСТВА -->
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <div class="advantages__grid">
+        <div class="advantages__item">
+          <div class="advantages__icon-img">🕐</div>
+          <h3>Работаем 24/7</h3>
+          <p>Принимаем заявки круглосуточно, выезжаем в любое время</p>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__icon-img">🛡️</div>
+          <h3>Страхование груза</h3>
+          <p>Каждая перевозка застрахована — вы получите компенсацию</p>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__icon-img">🚛</div>
+          <h3>Любой тоннаж</h3>
+          <p>Газели, 5-тонники, фуры — подберём машину под ваш груз</p>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__icon-img">✅</div>
+          <h3>Точно в срок</h3>
+          <p>Опаздываем менее чем в 1% случаев — проверено клиентами</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Наши услуги</h2>
+      <div class="services__grid">
+        <div class="services__card">
+          <img src="https://picsum.photos/id/1078/400/250" alt="Квартирный переезд" class="services__img">
+          <h3>Квартирный переезд</h3>
+          <p>Упакуем, перевезём и расставим мебель на новом месте</p>
+          <span class="services__price">от 2 000 ₽</span>
+        </div>
+        <div class="services__card">
+          <img src="https://picsum.photos/id/180/400/250" alt="Офисный переезд" class="services__img">
+          <h3>Офисный переезд</h3>
+          <p>Переезд без остановки бизнеса — работаем ночью и в выходные</p>
+          <span class="services__price">от 5 000 ₽</span>
+        </div>
+        <div class="services__card">
+          <img src="https://picsum.photos/id/1080/400/250" alt="Строительные грузы" class="services__img">
+          <h3>Строительные грузы</h3>
+          <p>Доставка стройматериалов, оборудования, техники</p>
+          <span class="services__price">от 3 000 ₽</span>
+        </div>
+        <div class="services__card">
+          <img src="https://picsum.photos/id/1/400/250" alt="Попутные перевозки" class="services__img">
+          <h3>Попутные перевозки</h3>
+          <p>Отправить небольшой груз по пути? Легко и дёшево</p>
+          <span class="services__price">от 800 ₽</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАЛЬКУЛЯТОР -->
+  <section class="calculator" id="calculator">
+    <div class="container">
+      <h2 class="section-title">Рассчитайте стоимость</h2>
+      <div class="calculator__inner">
+        <div class="calculator__field">
+          <label for="cargo-type">Тип груза</label>
+          <select id="cargo-type">
+            <option value="1">Квартирный переезд</option>
+            <option value="1.5">Офисный переезд</option>
+            <option value="2">Строительные материалы</option>
+            <option value="0.5">Попутный груз</option>
+          </select>
+        </div>
+        <div class="calculator__field">
+          <label for="distance">Расстояние: <span id="distance-value">10</span> км</label>
+          <input type="range" id="distance" min="1" max="200" value="10">
+        </div>
+        <div class="calculator__result">
+          Примерная стоимость: <strong id="calc-price">1 500 ₽</strong>
+        </div>
+        <a href="#contact" class="btn btn--primary">Оформить заявку</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЭТАПЫ -->
+  <section class="steps" id="steps">
+    <div class="container">
+      <h2 class="section-title">Как мы работаем</h2>
+      <div class="steps__list">
+        <div class="steps__item">
+          <span class="steps__num">1</span>
+          <p>Оставляете заявку</p>
+        </div>
+        <div class="steps__item">
+          <span class="steps__num">2</span>
+          <p>Рассчитываем стоимость</p>
+        </div>
+        <div class="steps__item">
+          <span class="steps__num">3</span>
+          <p>Подаём машину вовремя</p>
+        </div>
+        <div class="steps__item">
+          <span class="steps__num">4</span>
+          <p>Доставляем и сдаём груз</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h2 class="section-title">Отзывы клиентов</h2>
+      <div class="reviews__grid">
+        <div class="reviews__card">
+          <img src="https://i.pravatar.cc/60?img=47" alt="Анна" class="reviews__avatar">
+          <p>«Переехали из трёшки за один день, ребята аккуратные, ничего не сломали!»</p>
+          <strong>— Анна, Москва</strong>
+        </div>
+        <div class="reviews__card">
+          <img src="https://i.pravatar.cc/60?img=12" alt="Игорь" class="reviews__avatar">
+          <p>«Перевезли весь офис за выходные, в понедельник уже работали в штатном режиме.»</p>
+          <strong>— Игорь, директор ООО «Альфа»</strong>
+        </div>
+        <div class="reviews__card">
+          <img src="https://i.pravatar.cc/60?img=33" alt="Максим" class="reviews__avatar">
+          <p>«Заказывал доставку стройматериалов трижды — всегда точно в срок и без повреждений.»</p>
+          <strong>— Максим, прораб</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФОРМА -->
+  <section class="contact-form" id="contact">
+    <div class="container">
+      <h2 class="section-title">Оставить заявку</h2>
+      <form class="form" id="orderForm" novalidate>
+        <div class="form__field">
+          <input type="text" id="name" placeholder="Ваше имя" autocomplete="off">
+          <span class="form__error" id="nameError"></span>
+        </div>
+        <div class="form__field">
+          <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" autocomplete="off">
+          <span class="form__error" id="phoneError"></span>
+        </div>
+        <div class="form__field">
+          <textarea id="comment" placeholder="Комментарий (откуда, куда, что везём)" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">Отправить заявку</button>
+        <p class="form__success" id="formSuccess">✅ Заявка принята! Перезвоним в течение 15 минут.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 СтройГруз. Все права защищены.</p>
+      <div class="footer__contacts">
+        <a href="tel:+79001234567">+7 (900) 123-45-67</a>
+        <span>Пн–Вс: 24/7</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+</html>
